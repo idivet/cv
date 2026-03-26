@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>أنتوني أنسيل — السيرة الذاتية</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <title>Antony Ancil — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #0e1117;
@@ -17,7 +17,7 @@
       --border: #2a3040;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: 'Tajawal', sans-serif; font-size: 15px; line-height: 1.8; direction: rtl; }
+    body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.8; }
 
     /* LANG BAR */
     .lang-bar {
@@ -26,11 +26,11 @@
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       padding: .65rem 1.5rem;
-      display: flex; align-items: center; justify-content: flex-start; gap: .8rem;
+      display: flex; align-items: center; justify-content: flex-end; gap: .8rem;
     }
     .lang-btn {
       text-decoration: none;
-      font-family: 'Tajawal', sans-serif;
+      font-family: 'DM Sans', sans-serif;
       font-size: .8rem; font-weight: 600;
       padding: .3rem .9rem;
       border-radius: 20px;
@@ -59,36 +59,36 @@
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto 1.1rem;
       background: linear-gradient(135deg, #1c2333, #252e42);
-      font-family: 'Cairo', sans-serif;
+      font-family: 'Cormorant Garamond', serif;
       font-size: 1.8rem; font-weight: 700; color: var(--accent);
     }
-    h1 { font-family: 'Cairo', sans-serif; font-size: 2.1rem; font-weight: 700; color: #fff; margin-bottom: .3rem; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.1rem; font-weight: 700; color: #fff; margin-bottom: .3rem; letter-spacing: 1px; }
     .subtitle { font-size: .97rem; color: var(--accent); font-weight: 500; margin-bottom: 1.2rem; }
     .contact-row { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 1.3rem; font-size: .84rem; color: var(--muted); }
-    .contact-row span { display: flex; align-items: center; gap: .35rem; direction: ltr; }
+    .contact-row span { display: flex; align-items: center; gap: .35rem; }
 
     /* PAGE */
-    .page { max-width: 980px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; display: grid; grid-template-columns: 295px 1fr; gap: 2rem; }
+    .page { max-width: 980px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; display: grid; grid-template-columns: 1fr 295px; gap: 2rem; }
     @media(max-width:700px) { .page { grid-template-columns: 1fr; } }
 
     section { margin-bottom: 2rem; }
-    .section-title { font-family: 'Cairo', sans-serif; font-size: .7rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: .45rem; margin-bottom: 1.1rem; }
+    .section-title { font-family: 'DM Sans', sans-serif; font-size: .7rem; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: .45rem; margin-bottom: 1.1rem; }
 
     .profile-text { color: #ccc; font-size: .92rem; line-height: 2; }
 
-    .job { margin-bottom: 1.8rem; position: relative; padding-right: 1rem; }
-    .job::before { content: ''; position: absolute; right: 0; top: 6px; bottom: -1.2rem; width: 2px; background: linear-gradient(to bottom, var(--accent), transparent); }
+    .job { margin-bottom: 1.8rem; position: relative; padding-left: 1rem; }
+    .job::before { content: ''; position: absolute; left: 0; top: 6px; bottom: -1.2rem; width: 2px; background: linear-gradient(to bottom, var(--accent), transparent); }
     .job:last-child::before { bottom: 0; }
-    .job-dot { position: absolute; right: -5px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+    .job-dot { position: absolute; left: -5px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
     .job-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; }
-    .job-title { font-family: 'Cairo', sans-serif; font-size: .98rem; font-weight: 700; color: #fff; }
-    .job-period { font-size: .77rem; color: var(--accent2); white-space: nowrap; direction: ltr; }
+    .job-title { font-size: .98rem; font-weight: 700; color: #fff; }
+    .job-period { font-size: .77rem; color: var(--accent2); white-space: nowrap; }
     .job-org { font-size: .84rem; color: var(--accent); margin: .2rem 0 .55rem; }
-    .job ul { padding-right: 1.1rem; }
+    .job ul { padding-left: 1.1rem; }
     .job ul li { font-size: .87rem; color: #bbb; margin-bottom: .3rem; line-height: 1.75; }
 
     .achievement { display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start; }
-    .ach-num { font-family: 'Cairo', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--accent); opacity: .4; line-height: 1; min-width: 2.5rem; }
+    .ach-num { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 800; color: var(--accent); opacity: .4; line-height: 1; min-width: 2.5rem; }
     .ach-text { font-size: .87rem; color: #bbb; }
 
     .tag-grid { display: flex; flex-wrap: wrap; gap: .45rem; }
@@ -125,185 +125,184 @@
 <body>
 
 <div class="lang-bar">
-  <a href="../" class="lang-btn">EN — English</a>
-  <a href="#" class="lang-btn active">عربي — Arabic</a>
+  <a href="#" class="lang-btn active">EN — English</a>
+  <a href="../ar/" class="lang-btn">عربي — Arabic</a>
 </div>
 
 <header>
-  <div class="avatar-ring">أأ</div>
-  <h1>أنتوني أنسيل</h1>
-  <p class="subtitle">محترف في الإدارة وإدارة المرافق</p>
+  <div class="avatar-ring">AA</div>
+  <h1>Antony Ancil</h1>
+  <p class="subtitle">Administration &amp; Facilities Management Professional</p>
   <div class="contact-row">
-    <span>📍 كولام، كيرالا، الهند</span>
+    <span>📍 Kollam, Kerala, India</span>
     <span>📞 +91 8589895659 / +91 9188800911</span>
     <span>✉ idivet@gmail.com</span>
   </div>
 </header>
 
 <div class="page">
+  <div class="main-col">
+
+    <section>
+      <div class="section-title">Profile</div>
+      <p class="profile-text">Results-driven Administration and Facilities Management professional with over 30 years of international experience, including 20+ years with the Higher Colleges of Technology (UAE). Proven expertise across facilities operations, procurement, finance coordination, asset control, event management, and health &amp; safety compliance. Adept at vendor relations, MEP maintenance coordination, AV/IT support, and infrastructure management. A multilingual team leader known for dependability, attention to detail, and a positive can-do attitude.</p>
+    </section>
+
+    <section>
+      <div class="section-title">Professional Experience</div>
+
+      <div class="job">
+        <div class="job-dot"></div>
+        <div class="job-header">
+          <span class="job-title">Administrator &amp; Assistant Manager</span>
+          <span class="job-period">Oct 2019 — Present</span>
+        </div>
+        <p class="job-org">Delma Industrial Coating Est. / The Farm Story — Abu Dhabi / Kerala</p>
+        <ul>
+          <li>Managed finance administration, infrastructure maintenance, and asset management for two concurrent operations.</li>
+          <li>Coordinated client quotations, customer communication, and project follow-ups, improving service response time.</li>
+          <li>Liaised with banks and financial institutions for all operational and transactional matters.</li>
+          <li>Supervised and coordinated the installation of solar panel systems at The Farm Story, Kerala.</li>
+          <li>Oversaw electrical, plumbing, carpentry, and general maintenance works, ensuring operational continuity.</li>
+          <li>Implemented environmental sustainability and waste management practices.</li>
+          <li>Developed and maintained ISO 9001 documentation including quality manuals, SOPs, and process records.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-dot"></div>
+        <div class="job-header">
+          <span class="job-title">Facilities Officer / Asset Controller / Petty Cash Custodian</span>
+          <span class="job-period">Dec 2007 — Sep 2019</span>
+        </div>
+        <p class="job-org">Higher Colleges of Technology (Madinat Zayed &amp; Ruwais Campuses) — UAE</p>
+        <ul>
+          <li>Managed all aspects of facilities operations for two campuses, including infrastructure, space management, and event support.</li>
+          <li>Served as key liaison between both Western Region Colleges and the central Facilities &amp; Administration Division in Abu Dhabi.</li>
+          <li>Coordinated MEP maintenance with external vendors and contractors, ensuring minimal downtime.</li>
+          <li>Pioneered the set-up of distance learning classrooms linking Madinat Zayed and Ruwais campuses (2008).</li>
+          <li>Maintained comprehensive asset tracking, inventory, and barcoding systems.</li>
+          <li>Supervised fire safety, emergency preparedness, and all campus HSE procedures.</li>
+          <li>Promoted from Administrative Assistant to Facilities Officer, Finance Assistant, Asset Controller, and Services Coordinator.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-dot"></div>
+        <div class="job-header">
+          <span class="job-title">Administrative Assistant</span>
+          <span class="job-period">Sep 1999 — Dec 2007</span>
+        </div>
+        <p class="job-org">Higher Colleges of Technology — Fujairah, UAE</p>
+        <ul>
+          <li>Managed vehicle bookings, staff transport, and field trip logistics.</li>
+          <li>Handled documentation, filing systems, courier services, and inventory management.</li>
+          <li>Supported housing coordination, visa processing, and onboarding of new staff members.</li>
+          <li>Assisted in event coordination and student study tours across the UAE.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-dot"></div>
+        <div class="job-header">
+          <span class="job-title">Tour Coordinator / Guide</span>
+          <span class="job-period">1995 — 1999</span>
+        </div>
+        <p class="job-org">Al Ain Camel Safari (Hilton-Based) — UAE</p>
+        <ul>
+          <li>Coordinated tourism operations, desert camping activities, and guided tours across Al Ain and surrounding areas.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-dot"></div>
+        <div class="job-header">
+          <span class="job-title">Sales Executive / Maintenance Coordinator</span>
+          <span class="job-period">1990 — 1994</span>
+        </div>
+        <p class="job-org">Al Tawoos Technical Services / Al Salami Group of Companies — UAE</p>
+        <ul>
+          <li>Handled electrical and A/C maintenance coordination and public relations tasks.</li>
+          <li>Managed para-pharmaceutical sales, dry foods &amp; confectionery, and public relations duties.</li>
+          <li>Participated in International Travel &amp; Tour Operations and the 1993 Dubai Air Show.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Key Achievements</div>
+      <div class="achievement"><span class="ach-num">01</span><span class="ach-text">HCT Fujairah Support Staff Award (2004–2005) — recognised for outstanding contribution to campus operations.</span></div>
+      <div class="achievement"><span class="ach-num">02</span><span class="ach-text">10-Year Contribution Award — Higher Colleges of Technology (2010).</span></div>
+      <div class="achievement"><span class="ach-num">03</span><span class="ach-text">Completed over 20 years of continuous service with the Higher Colleges of Technology across multiple campuses.</span></div>
+      <div class="achievement"><span class="ach-num">04</span><span class="ach-text">Successfully spearheaded distance learning classroom infrastructure connecting two remote campuses (2008).</span></div>
+      <div class="achievement"><span class="ach-num">05</span><span class="ach-text">Supervised and delivered solar energy installation project for The Farm Story, Kerala.</span></div>
+    </section>
+
+  </div>
 
   <div class="sidebar">
 
     <section>
-      <div class="section-title">الكفاءات الأساسية</div>
+      <div class="section-title">Core Competencies</div>
       <div class="tag-grid">
-        <span class="tag">إدارة المرافق</span><span class="tag">المشتريات</span>
-        <span class="tag">مراقبة الأصول</span><span class="tag">الصحة والسلامة</span>
-        <span class="tag">إدارة المكتب</span><span class="tag">تنسيق الموردين</span>
-        <span class="tag">إدارة الفعاليات</span><span class="tag">صيانة MEP</span>
-        <span class="tag">الأنظمة السمعبصرية</span><span class="tag">دعم تقنية المعلومات</span>
-        <span class="tag">إدارة الأسطول</span><span class="tag">توثيق ISO</span>
+        <span class="tag">Facilities Management</span><span class="tag">Procurement &amp; LPO</span>
+        <span class="tag">Asset Control</span><span class="tag">HSE Compliance</span>
+        <span class="tag">Office Administration</span><span class="tag">Vendor Coordination</span>
+        <span class="tag">Event Management</span><span class="tag">MEP Maintenance</span>
+        <span class="tag">AV Systems</span><span class="tag">IT Support</span>
+        <span class="tag">Fleet Management</span><span class="tag">ISO Documentation</span>
       </div>
     </section>
 
     <section>
-      <div class="section-title">اللغات</div>
-      <div class="lang-item"><div class="lang-label-row"><span>الإنجليزية</span><span>طلاقة</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:95%"></div></div></div>
-      <div class="lang-item"><div class="lang-label-row"><span>المالايالامية</span><span>اللغة الأم</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:100%"></div></div></div>
-      <div class="lang-item"><div class="lang-label-row"><span>الهندية</span><span>طلاقة</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:90%"></div></div></div>
-      <div class="lang-item"><div class="lang-label-row"><span>التاميلية</span><span>طلاقة</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:88%"></div></div></div>
-      <div class="lang-item"><div class="lang-label-row"><span>العربية</span><span>مستوى العمل</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:60%"></div></div></div>
+      <div class="section-title">Languages</div>
+      <div class="lang-item"><div class="lang-label-row"><span>English</span><span>Fluent</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:95%"></div></div></div>
+      <div class="lang-item"><div class="lang-label-row"><span>Malayalam</span><span>Native</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:100%"></div></div></div>
+      <div class="lang-item"><div class="lang-label-row"><span>Hindi</span><span>Fluent</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:90%"></div></div></div>
+      <div class="lang-item"><div class="lang-label-row"><span>Tamil</span><span>Fluent</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:88%"></div></div></div>
+      <div class="lang-item"><div class="lang-label-row"><span>Arabic</span><span>Working</span></div><div class="lang-bar-track"><div class="lang-fill" style="width:60%"></div></div></div>
     </section>
 
     <section>
-      <div class="section-title">التعليم</div>
-      <div class="edu-item"><p class="edu-degree">بكالوريوس التجارة</p><p class="edu-inst">جامعة فيناياكا ميشنز، تاميل نادو، الهند</p></div>
-      <div class="edu-item"><p class="edu-degree">دبلوم في هندسة البرمجيات</p><p class="edu-inst">معهد زينيث للتدريب (كينت، المملكة المتحدة) — الفجيرة</p></div>
-      <div class="edu-item"><p class="edu-degree">شهادة الثانوية العامة</p><p class="edu-inst">مدرسة ليو الثالث عشر، كيرالا، الهند</p></div>
+      <div class="section-title">Education</div>
+      <div class="edu-item"><p class="edu-degree">Bachelor of Commerce</p><p class="edu-inst">Vinayaka Missions University, Tamil Nadu, India</p></div>
+      <div class="edu-item"><p class="edu-degree">Diploma in Software Engineering</p><p class="edu-inst">Zenith Training Institute (Kent, UK) — Fujairah, UAE</p></div>
+      <div class="edu-item"><p class="edu-degree">Secondary School Certificate</p><p class="edu-inst">Leo XIII High School, Kerala, India</p></div>
     </section>
 
     <section>
-      <div class="section-title">الشهادات المهنية</div>
+      <div class="section-title">Certifications</div>
       <ul class="cert-list">
-        <li>إدارة السلامة — IOSH</li>
-        <li>الإسعافات الأولية الطارئة — المستوى 2</li>
-        <li>تدريب إطفاء الحرائق الأساسي</li>
-        <li>الصيغ والوظائف المتقدمة في Excel</li>
-        <li>إعداد خبير Microsoft Office 2016</li>
-        <li>الوعي بحماية الطفل — المجلس البريطاني</li>
-        <li>أسس البحث الأكاديمي — الكمي</li>
-        <li>برنامج الإبداع والابتكار</li>
+        <li>IOSH Managing Safely</li>
+        <li>HABC Level 2 Emergency First Aid</li>
+        <li>Basic Fire Fighting Training</li>
+        <li>Excel Advanced Formulas and Functions</li>
+        <li>Excel 2016 Microsoft Office Expert Preparation</li>
+        <li>Child Protection Awareness — British Council</li>
+        <li>Academic Research Foundations — Quantitative</li>
+        <li>Creativity &amp; Innovation Program</li>
       </ul>
     </section>
 
     <section>
-      <div class="section-title">المهارات التقنية</div>
+      <div class="section-title">Technical Skills</div>
       <div class="skill-chips">
-        <span class="skill-chip">Windows</span><span class="skill-chip">MS Office</span>
-        <span class="skill-chip">Linux</span><span class="skill-chip">أساسيات الشبكات</span>
-        <span class="skill-chip">تحرير الفيديو</span><span class="skill-chip">Adobe / Pinnacle</span>
-        <span class="skill-chip">أنظمة AV</span><span class="skill-chip">Android</span>
-        <span class="skill-chip">توثيق ISO</span>
+        <span class="skill-chip">MS Windows</span><span class="skill-chip">MS Office</span>
+        <span class="skill-chip">Linux</span><span class="skill-chip">Networking</span>
+        <span class="skill-chip">Video Editing</span><span class="skill-chip">Adobe / Pinnacle</span>
+        <span class="skill-chip">AV Systems</span><span class="skill-chip">Android</span>
+        <span class="skill-chip">ISO Docs</span>
       </div>
     </section>
 
     <section>
-      <div class="section-title">رخص القيادة</div>
-      <span class="driving-badge">🚗 رخصة هندية وإماراتية سارية — سيارة، فان، حافلة صغيرة، دراجة نارية</span>
+      <div class="section-title">Driving Licences</div>
+      <span class="driving-badge">🚗 Valid Indian &amp; UAE licences — Car, Van, Minibus, Motorcycle</span>
     </section>
 
   </div>
-
-  <div class="main-col">
-
-    <section>
-      <div class="section-title">الملف الشخصي</div>
-      <p class="profile-text">محترف متميز في الإدارة وإدارة المرافق يمتلك أكثر من 30 عامًا من الخبرة الدولية، من بينها أكثر من 20 عامًا مع كليات التقنية العليا في الإمارات العربية المتحدة. يتمتع بخبرة مُثبتة في عمليات المرافق، والمشتريات، والتنسيق المالي، ومراقبة الأصول، وإدارة الفعاليات، والامتثال للصحة والسلامة. متعدد اللغات وقائد فريق يُعرف بالموثوقية والاهتمام بالتفاصيل وروح المبادرة الإيجابية.</p>
-    </section>
-
-    <section>
-      <div class="section-title">الخبرة المهنية</div>
-
-      <div class="job">
-        <div class="job-dot"></div>
-        <div class="job-header">
-          <span class="job-title">مدير إداري ومساعد مدير</span>
-          <span class="job-period">أكتوبر 2019 — حتى الآن</span>
-        </div>
-        <p class="job-org">دلما للطلاءات الصناعية / مشروع المزرعة — أبوظبي / كيرالا</p>
-        <ul>
-          <li>إدارة الشؤون المالية والبنية التحتية وإدارة الأصول لعمليتين متزامنتين.</li>
-          <li>تنسيق عروض الأسعار وتواصل العملاء ومتابعة المشاريع لتحسين وقت الاستجابة.</li>
-          <li>التواصل مع البنوك والمؤسسات المالية في جميع الشؤون التشغيلية.</li>
-          <li>الإشراف على تركيب أنظمة الطاقة الشمسية في مشروع المزرعة، كيرالا.</li>
-          <li>الإشراف على أعمال الكهرباء والسباكة والنجارة والصيانة العامة.</li>
-          <li>تطبيق ممارسات الاستدامة البيئية وإدارة النفايات.</li>
-          <li>تطوير وصيانة وثائق ISO 9001 بما فيها أدلة الجودة وإجراءات التشغيل المعيارية.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-dot"></div>
-        <div class="job-header">
-          <span class="job-title">مسؤول مرافق / مراقب أصول / أمين الصندوق</span>
-          <span class="job-period">ديسمبر 2007 — سبتمبر 2019</span>
-        </div>
-        <p class="job-org">كليات التقنية العليا (مدينة زايد والرويس) — الإمارات</p>
-        <ul>
-          <li>إدارة جميع جوانب عمليات المرافق لحرمين جامعيين شاملةً البنية التحتية وإدارة المساحات.</li>
-          <li>التنسيق مع إدارة المرافق والإدارة المركزية في أبوظبي.</li>
-          <li>تنسيق صيانة MEP مع الموردين والمقاولين لضمان أدنى توقف تشغيلي.</li>
-          <li>رائد في إنشاء قاعات التعلم عن بُعد الرابطة بين حرمَي مدينة زايد والرويس (2008).</li>
-          <li>الإشراف على السلامة من الحريق وإجراءات الطوارئ وجميع إجراءات الصحة والسلامة.</li>
-          <li>ترقٍّ تدريجي من مساعد إداري إلى مسؤول مرافق ومساعد مالي ومراقب أصول ومنسق خدمات.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-dot"></div>
-        <div class="job-header">
-          <span class="job-title">مساعد إداري</span>
-          <span class="job-period">سبتمبر 1999 — ديسمبر 2007</span>
-        </div>
-        <p class="job-org">كليات التقنية العليا — الفجيرة، الإمارات</p>
-        <ul>
-          <li>إدارة حجوزات المركبات والنقل ولوجستيات الرحلات الميدانية.</li>
-          <li>التعامل مع التوثيق وأنظمة الأرشفة وخدمات البريد وإدارة المخزون.</li>
-          <li>دعم تنسيق الإسكان ومعالجة التأشيرات وإدماج الموظفين الجدد.</li>
-          <li>المساعدة في تنسيق الفعاليات والجولات الطلابية عبر الإمارات.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-dot"></div>
-        <div class="job-header">
-          <span class="job-title">منسق جولات سياحية / مرشد</span>
-          <span class="job-period">1995 — 1999</span>
-        </div>
-        <p class="job-org">رحلات جمل العين (هيلتون) — الإمارات</p>
-        <ul>
-          <li>تنسيق عمليات السياحة وأنشطة التخييم في الصحراء والجولات الإرشادية في منطقة العين.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-dot"></div>
-        <div class="job-header">
-          <span class="job-title">مندوب مبيعات / منسق صيانة</span>
-          <span class="job-period">1990 — 1994</span>
-        </div>
-        <p class="job-org">مؤسسة الطاووس للخدمات التقنية / مجموعة السلامي — الإمارات</p>
-        <ul>
-          <li>تنسيق صيانة الكهرباء وأجهزة التكييف والعلاقات العامة.</li>
-          <li>إدارة مبيعات المستحضرات الصيدلانية والأغذية الجافة والعلاقات العامة.</li>
-          <li>المشاركة في عمليات السفر والسياحة الدولية ومعرض دبي للطيران 1993.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-title">الإنجازات الرئيسية</div>
-      <div class="achievement"><span class="ach-num">٠١</span><span class="ach-text">جائزة موظف الدعم — كليات التقنية العليا الفجيرة (2004–2005) تقديرًا للإسهام المتميز في العمليات الجامعية.</span></div>
-      <div class="achievement"><span class="ach-num">٠٢</span><span class="ach-text">جائزة الإسهام لعشر سنوات — كليات التقنية العليا (2010).</span></div>
-      <div class="achievement"><span class="ach-num">٠٣</span><span class="ach-text">إتمام أكثر من 20 عامًا من الخدمة المتواصلة مع كليات التقنية العليا عبر عدة حرم جامعي.</span></div>
-      <div class="achievement"><span class="ach-num">٠٤</span><span class="ach-text">قيادة إنشاء البنية التحتية لقاعات التعلم عن بُعد الرابطة بين حرمين نائيين (2008).</span></div>
-      <div class="achievement"><span class="ach-num">٠٥</span><span class="ach-text">الإشراف على تنفيذ مشروع الطاقة الشمسية في مشروع مزرعة كيرالا.</span></div>
-    </section>
-
-  </div>
-
 </div>
 
-<footer>أنتوني أنسيل · السيرة الذاتية · كولام، كيرالا، الهند · idivet@gmail.com</footer>
+<footer>Antony Ancil · CV · Kollam, Kerala, India · idivet@gmail.com</footer>
 </body>
 </html>
