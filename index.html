@@ -304,14 +304,20 @@
 </div>
 
 <footer>Antony Ancil · CV · Kollam, Kerala, India · idivet@gmail.com</footer>
+  <a href="Antony_Ancil_CV.pdf" download="Antony_Ancil_CV.pdf"
+  onclick="trackDownload()"
+  style="display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 22px;background:#2563eb;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:600;font-size:14px;">
+  ⬇ Download CV (PDF)
+</a>
 </body>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LF31LBNXP6"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF31LBNXP6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-LF31LBNXP6');
+  function trackDownload() {
+    gtag('event', 'cv_download', { event_category: 'engagement' });
+  }
 </script>
 </html>
